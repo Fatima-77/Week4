@@ -1,0 +1,32 @@
+class Employee {
+    String name;
+    int id;
+    String position;
+    double salary;
+
+    void input(String empName, int empId, String empPosition, double empSalary) {
+        name = empName;
+        id = empId;
+        position = empPosition;
+        salary = empSalary;
+    }
+
+    void display() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee ID: " + id);
+        System.out.println("Position: " + position);
+        System.out.println("Salary: $" + salary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee emp = new Employee();  // Create an instance of the Employee class
+
+        // Call the input() method to assign values
+        emp.input("John Doe", 12345, "Manager", 60000.0);
+
+        // Call the display() method to show the employee information
+        emp.display();
+    }
+}
